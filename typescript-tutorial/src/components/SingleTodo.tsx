@@ -70,7 +70,6 @@ const SingleTodo = ({todo, todos, setTodos, index} : Props) => {
                 <span className='todos__single--text'>{todo.todo}</span>
               )
             }
-            <span className='todos__single--text'>{todo.todo}</span>
             <div>
               <span className='icon' onClick={()=>{
                 if(!edit && !todo.isDone){
