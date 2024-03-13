@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Todo } from '../model/models';
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
-import { MdDone } from "react-icons/md";
+import { MdDone,  MdOutlineFormatStrikethrough} from "react-icons/md";
 import './styles.css';
 import TodoList from './TodoList';
 import { Draggable } from 'react-beautiful-dnd';
@@ -82,7 +82,7 @@ const SingleTodo = ({todo, todos, setTodos, index} : Props) => {
                 <AiFillDelete></AiFillDelete>
               </span>
               <span className='icon' onClick={() => handleDone(todo.id)}>
-                <MdDone></MdDone>
+                <MdOutlineFormatStrikethrough></MdOutlineFormatStrikethrough>
               </span>
             </div>
           </form>
